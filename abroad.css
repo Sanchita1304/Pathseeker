@@ -13,7 +13,7 @@
   }
   
   header {
-    background-color: #AA8282;
+    background-color: #0b0f19;
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -86,4 +86,5 @@
       margin: 10px 0;
     }
   }
+  
   
