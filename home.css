@@ -120,9 +120,9 @@ nav ul li a:hover::after{
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   position: absolute;
-  right: -230px;
-  top: 65%;
-  margin-top: -8px;
+  right: -250px;
+  top: 70%;
+  margin-top: -10px;
 }
 .content{
   background-color: #fff;
