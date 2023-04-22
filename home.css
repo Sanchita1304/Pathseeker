@@ -9,7 +9,7 @@ body {
   display: flex;
   /*justify-content: space-between;*/
   align-items: center;
-  background-color: #EDCACA; 
+  background-color: #000000; 
   padding: 2px; 
   margin: 0; 
 }
@@ -17,7 +17,7 @@ body {
 #header .logo {
   font-size: 30px;
   font-family: 'Sriracha', cursive;
-  color: #000;
+  color: #ffeeee;
   text-decoration: none;
   padding-left: 0px;
   margin-left: 0px;
@@ -39,21 +39,37 @@ form {
     border-radius: 10px;
   }
 
-  
-
-.nav-items {
+.nav-items ul {
   display: flex;
   justify-content: right;
   align-items: center;
-  background-color: #EDCACA;
-  margin-left: 900px;
+  background-color: #000000;
+  margin-left: 750px;
   font-size: 20px;
 }
-
-.nav-items a {
+.nav-items ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+.nav-items ul li a{
+  color: #fff;
   text-decoration: none;
-  color: #000;
-  padding: 35px 20px;
+  font-size: 18px;
+  position: relative;
+}
+.nav-items ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
 }
 /* CSS for main section */
 .intro {
@@ -63,7 +79,7 @@ form {
   align-items: center;
   width: 100%;
   height: 520px;
-  background-color: #C8A3A3;
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -94,7 +110,7 @@ form {
   cursor: pointer;
   font-size: 14px;
   padding: 6px 260px;
-  padding-left: 10px;
+  padding-left: 0;
   border: 0 !important;
   outline: 0 !important;
 }
@@ -104,9 +120,9 @@ form {
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   position: absolute;
-  right: -250px;
-  top: 70%;
-  margin-top: -10px;
+  right: -230px;
+  top: 65%;
+  margin-top: -8px;
 }
 .content{
   background-color: #fff;
@@ -150,7 +166,7 @@ form {
 /*explore*/
 .col{
     flex-basis: 50%;
-    background-color: #EDCACA;
+    background-color: #000000;
     width: 100%;
   height: 400px;
 }
@@ -302,5 +318,4 @@ form .btn2{
   margin-top: 20px;
   cursor: pointer;
 }
-
 
